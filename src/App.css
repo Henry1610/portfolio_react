@@ -1,38 +1,60 @@
-.App {
+/* Xoá hầu hết custom CSS, chỉ giữ lại style cho section nếu cần */
+.home-section, .about-section, .projects-section, .contact-section {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (max-width: 800px) {
+  main {
+    padding: 1rem;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Skill Card Hover Effect */
+.skill-card-wrapper {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  background-color: #ffffff; /* Default background, white */
+  border: 1px solid #dee2e6; /* Bootstrap border-secondary equivalent */
+}
+
+.skill-card-wrapper:hover {
+  background-color: rgba(13, 202, 240, 0.2); /* Light blue background on hover (info color with 20% opacity) */
+  border-color: #0dcaf0; /* Info color border on hover */
+}
+
+.skill-content-area {
+  transition: transform 0.3s ease-in-out;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
+  height: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.skill-level-display {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transform: translateY(20px); /* Initially hidden below */
+  color: #212529; /* Dark text color, Bootstrap's text-dark equivalent */
+  font-size: 0.9rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.skill-card-wrapper:hover .skill-content-area {
+  transform: translateY(-15px); /* Move content up */
+}
+
+.skill-card-wrapper:hover .skill-level-display {
+  opacity: 1;
+  transform: translateY(0); /* Bring level into view */
 }
