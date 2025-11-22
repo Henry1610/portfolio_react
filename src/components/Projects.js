@@ -1,44 +1,92 @@
 import React from 'react';
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
+const Projects = () => {
+  const projects = [
+    {
+      id: 1,
+      title: "Pro Store",
+      subtitle: "An e-commerce platform ( MERN )",
+      description: `An end-to-end e-commerce web application developed with the MERN stack (MongoDB, Express, React, Node.js). The platform enables users to browse products, manage their cart and wishlist, place orders, and complete secure payments via Stripe. Customers can maintain a shipping address book, view order history, submit reviews with images, and request cancellations or refunds. The admin dashboard provides full CRUD operations for products, categories, brands, discounts, and shipping zones, along with powerful order, user, payment, and review management tools. The system integrates JWT authentication for secure access, Cloudinary for media storage, Nodemailer for transactional emails, and Stripe for payment processing with webhook support. Fully responsive and performance-optimized, the application is designed for scalability and deployment readiness.`,
+      image: "/images/Screenshot 2025-10-03 151900.png",
+      visitLink: "https://prostoreecommerce.vercel.app/",
+      githubLink: "https://github.com/Henry1610/Ecommerce_NodeJS_Project",
+    },
+    {
+      id: 2,
+      title: "Shopee Clone",
+      subtitle: "Shopee clone UI ( React )",
+      description: `A responsive Shopee-style e-commerce frontend built with React and Redux. The platform allows users to browse products, search with filters, view product details, and manage their cart . Integrated Firebase Authentication provides secure login, registration, and password management. Enhanced with reusable custom hooks, debounced search, and route-based code splitting for scalability and performance.`,
+      image: "/images/Screenshot 2025-10-03 154736.png",
+      visitLink: "https://shopee-react-front-end.vercel.app/",
+      githubLink: "https://github.com/Henry1610/Shopee_React_FrontEnd",
+    },
+    {
+      id: 3,
+      title: "Henry Library",
+      subtitle: "Build ( React )",
+      description: `The PHP (MVC) Library Management Application allows users to register/login, browse and view book details, add books to a borrowing cart, submit borrowing requests, and track borrowing–return history. It supports a wishlist, book reviews, email notifications, and VNPay payment for borrowing fees or fines. The admin area provides CRUD operations for books/categories/users, approves borrowing–return requests, and manages transactions and fines.`,
+      image: "/images/Screenshot 2025-10-03 161409.png",
+      visitLink: "https://library.lovestoblog.com/",
+      githubLink: "https://github.com/Henry1610/Library_PHP",
+    }
+  ];
 
-const Projects = () => (
-  <div className="text-dark min-vh-100 font-inter">
-     
-     <h1 className="display-5 fw-bold mb-1">PROJECTS</h1>
-     <p className="text-uppercase small text-secondary mb-4">A Collection Of My Recent Works</p>
-      <main className="px-4 px-sm-5 px-md-5 px-lg-5 py-4 shadow rounded">
-        
+  return (
+    <div className="text-dark min-vh-100 font-inter container py-4">
+      <h1 className="display-5 fw-bold mb-1 ">PROJECTS</h1>
+      <p className="text-uppercase small text-secondary mb-4 ">
+        A Collection Of My Recent Works
+      </p>
 
-        <section className="d-flex flex-column flex-md-row gap-4">
-          <div className="w-100 w-md-50">
-            <img
-              src="https://storage.googleapis.com/a1aa/image/b6416e09-b324-4fc5-3776-4736869ed06b.jpg"
-              alt="Pixel art game screenshot"
-              className="img-fluid rounded"
-              width="400"
-              height="240"
-            />
-          </div>
+      {projects.map((project) => (
+        <main key={project.id} className="px-3 px-md-5 py-4 shadow rounded mb-5">
+          <section className="row justify-content-center align-items-center">
 
-          <div className="text-dark">
-            <h2 className="fw-semibold fs-5 mb-1">The Cities Within</h2>
-            <p className="fst-italic text-secondary small mb-3">An action role playing demo game</p>
-            <p className="small text-secondary mb-4" style={{ lineHeight: '1.6' }}>
-              Embark on an epic journey in this pixel art role-playing action game. Explore a vast world teeming with quests, NPCs, and fearsome monsters. Adapt to the dynamic day and night cycles as you hone your skills and collect powerful gear. Unleash your abilities in strategic battles and uncover the secrets about the city.
-            </p>
-            <div className="d-flex gap-3">
-              <button className="btn btn-outline-dark btn-sm">Visit Page</button>
-              <button className="btn btn-outline-secondary btn-sm disabled">GitHub</button>
+            {/* Cột hình ảnh */}
+            <div className="col-12 col-md-6 mb-4 mb-md-0">
+              <img
+                src={project.image}
+                alt={project.title}
+                className="img-fluid rounded border border-dark"
+              />
             </div>
-          </div>
-        </section>
 
-        <div className="d-flex justify-content-end align-items-center mt-5 gap-2 text-secondary small user-select-none">
-          <span>Navigate</span>
-          <i className="fas fa-arrow-right"></i>
-        </div>
-      </main>
+            {/* Cột nội dung */}
+            <div className="col-12 col-md-6 text-center text-md-start">
+              <h2 className="fw-semibold fs-4 mb-2">{project.title}</h2>
+              <p className="fst-italic text-secondary small mb-3">
+                {project.subtitle}
+              </p>
+              <p className="small text-secondary mb-4" style={{ lineHeight: "1.6" }}>
+                {project.description}
+              </p>
+
+              <div className="d-flex gap-2 justify-content-center justify-content-md-end">
+                <a
+                  href={project.githubLink}
+                  className="btn btn-outline-dark btn-sm  d-flex align-items-center gap-2"
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                >
+                  <FaGithub /> GitHub
+                </a>
+
+                <a
+                  href={project.visitLink}
+                  className="btn btn-dark btn-sm  d-flex align-items-center gap-2"
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                >
+                  <FaExternalLinkAlt /> Visit Page
+                </a>
+              </div>
+            </div>
+          </section>
+        </main>
+      ))}
     </div>
-);
+  );
+};
 
-export default Projects; 
+export default Projects;

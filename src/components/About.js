@@ -36,14 +36,14 @@ const About = () => {
       <p className="text-uppercase small text-secondary mb-4">My Profile At A Glance</p>
       <div className="bg-white rounded-4 p-5 shadow-lg mb-5">
         <h2 className="mb-4 d-flex align-items-center text-dark">
-           Information
+          Information
           <span className="ms-3 flex-grow-1 border-bottom border-secondary"></span>
         </h2>
         <div className="row align-items-center">
           {/* Avatar + Info */}
           <div className="col-md-4 text-center mb-4 mb-md-0">
             <img
-              src="https://bareskin.vn/wp-content/uploads/2025/04/avatar-anime-nam-ngau-15.jpg"
+              src="/images/z6946900614155_02e44d2ebc84aa97cc418a202a321445.jpg"
               alt="Avatar"
               className="img-fluid rounded-circle"
               style={{
@@ -125,13 +125,6 @@ const About = () => {
                 <strong>Long-Term:</strong> I aspire to become a professional full-stack developer who contributes to impactful digital products, explores modern technologies, and supports others through collaboration and mentorship.
               </p>
             </div>
-
-            {/* Closing */}
-            {/* 
-  <p className="lh-lg text-muted fs-6" style={{ textIndent: '2em' }}>
-    I look forward to collaborating and growing with others in the field!
-  </p> 
-  */}
           </div>
 
 
@@ -145,15 +138,15 @@ const About = () => {
           Skills
           <span className="ms-3 flex-grow-1 border-bottom border-secondary"></span>
         </h2>
-        <div className="d-flex mb-4 fw-bold">
+        <div className="d-flex mb-4 justify-content-center justify-content-md-start">
           <button
-            className={`btn me-2 fw-bold rounded-pill ${activeSkillTab === 'techStack' ? 'btn-info text-white' : 'btn-outline-secondary text-dark'}`}
+            className={`btn btn-tool-skill me-2 fw-bold rounded-pill ${activeSkillTab === 'techStack' ? 'btn-info text-white' : 'btn-outline-secondary text-dark'}`}
             onClick={() => setActiveSkillTab('techStack')}
           >
             Tech Stack
           </button>
           <button
-            className={`btn rounded-pill fw-bold ${activeSkillTab === 'tools' ? 'btn-info text-white' : 'btn-outline-secondary text-dark'}`}
+            className={`btn sbtn-tool-skill rounded-pill fw-bold ${activeSkillTab === 'tools' ? 'btn-info text-white' : 'btn-outline-secondary text-dark'}`}
             onClick={() => setActiveSkillTab('tools')}
           >
             Tools

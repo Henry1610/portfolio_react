@@ -37,7 +37,7 @@ function App() {
           {TABS.map(tab => (
             <button
               key={tab.key}
-              className={`btn rounded-pill mx-2 fw-bold${activeTab === tab.key ? ' bg-info text-white' : ''}`}
+              className={`btn btn-tab rounded-pill mx-2 fw-bold${activeTab === tab.key ? ' bg-info text-white' : ''}`}
               style={{minWidth: 120, fontSize: '1.2rem'}}
               onClick={() => setActiveTab(tab.key)}
             >
