@@ -11,6 +11,7 @@ const techStack = [
   { name: 'PHP', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg', level: 'Intermediate' },
   { name: 'MongoDB', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg', level: 'Intermediate' },
   { name: 'MySQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg', level: 'Intermediate' },
+  { name: 'PostgreSQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg', level: 'Intermediate' },
   { name: 'Tailwind', icon: 'https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg', level: 'Intermediate' },
   { name: 'Bootstrap', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg', level: 'Advanced' },
 ];
@@ -69,7 +70,7 @@ const About = () => {
               </li>
               <li className="mb-2">
                 <i className="fa-solid fa-paper-plane me-2"></i>
-                <strong>Email:</strong> <span className="text-muted">trannguyentruong6@example.com</span>
+                <strong>Email:</strong> <span className="text-muted">trannguyentruong6@gmail.com</span>
               </li>
               <li className="mb-2">
                 <i className="fa-solid fa-grip me-2"></i>
