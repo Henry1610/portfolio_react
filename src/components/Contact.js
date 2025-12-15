@@ -73,9 +73,8 @@ const Contact = () => {
           </div>
 
           <div className="d-flex justify-content-center gap-3 gap-md-4 mb-4 fs-4">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="text-dark text-decoration-none hover-dark"><i className="fab fa-github"></i></a>
-            <a href="mailto:your-email@example.com" aria-label="Email" className="text-dark text-decoration-none hover-dark"><i className="fab fa-google"></i></a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-dark text-decoration-none hover-dark"><i className="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/Henry1610" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="text-dark text-decoration-none hover-dark"><i className="fab fa-github"></i></a>
+            <a href="trannguyentruong6@gmail.com" aria-label="Email" className="text-dark text-decoration-none hover-dark"><i className="fab fa-google"></i></a>
             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-dark text-decoration-none hover-dark"><i className="fab fa-instagram"></i></a>
             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-dark text-decoration-none hover-dark"><i className="fab fa-facebook-f"></i></a>
           </div>
