@@ -9,7 +9,7 @@ const Projects = () => {
       subtitle: "An e-commerce platform ( MERN )",
       description: `An end-to-end e-commerce web application developed with the MERN stack (MongoDB, Express, React, Node.js). The platform enables users to browse products, manage their cart and wishlist, place orders, and complete secure payments via Stripe. Customers can maintain a shipping address book, view order history, submit reviews with images, and request cancellations or refunds. The admin dashboard provides full CRUD operations for products, categories, brands, discounts, and shipping zones, along with powerful order, user, payment, and review management tools. The system integrates JWT authentication for secure access, Cloudinary for media storage, Nodemailer for transactional emails, and Stripe for payment processing with webhook support. Fully responsive and performance-optimized, the application is designed for scalability and deployment readiness.`,
       image: "/images/Screenshot 2025-10-03 151900.png",
-      visitLink: "https://prostoreecommerce.vercel.app/",
+      visitLink: "https://proshop.io.vn/",
       githubLink: "https://github.com/Henry1610/Ecommerce_NodeJS_Project",
     },
     {
@@ -18,7 +18,7 @@ const Projects = () => {
       subtitle: "Instagram clone ( PERN )",
       description: `A full-stack social media platform built with the PERN stack (PostgreSQL, Express.js, React, Node.js) and Prisma ORM. Features include post creation with media uploads, comments, reactions, reposts, follow system with private account support, real-time messaging (1-on-1 and group chats), comprehensive privacy controls, saved posts, user search, and notifications. The application integrates JWT authentication, OAuth (Facebook), OTP verification (email/SMS), Redis caching, Cloudinary media storage, Socket.io for real-time updates, RTK Query for data management, and Tailwind CSS for responsive design. Fully optimized for scalability and deployment readiness.`,
       image: "/images/Screenshot 2025-10-03 161409.png",
-      visitLink: "https://social-app-client-p3fl.vercel.app/",
+      visitLink: "https://insta.io.vn/",
       githubLink: [
         { label: "Frontend", url: "https://github.com/Henry1610/social-app-client" },
         { label: "Backend", url: "https://github.com/Henry1610/social-app-server" }
