@@ -17,7 +17,7 @@ const Projects = () => {
       title: "Social App",
       subtitle: "Instagram clone ( PERN )",
       description: `A full-stack social media platform built with the PERN stack (PostgreSQL, Express.js, React, Node.js) and Prisma ORM. Features include post creation with media uploads, comments, reactions, reposts, follow system with private account support, real-time messaging (1-on-1 and group chats), comprehensive privacy controls, saved posts, user search, and notifications. The application integrates JWT authentication, OAuth (Facebook), OTP verification (email/SMS), Redis caching, Cloudinary media storage, Socket.io for real-time updates, RTK Query for data management, and Tailwind CSS for responsive design. Fully optimized for scalability and deployment readiness.`,
-      image: "/images/Screenshot 2025-10-03 161409.png",
+      image: "/images/Screenshot 2025-12-25 131518.png",
       visitLink: "https://insta.io.vn/",
       githubLink: [
         { label: "Frontend", url: "https://github.com/Henry1610/social-app-client" },
